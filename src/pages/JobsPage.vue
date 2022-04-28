@@ -8,6 +8,16 @@
       <!-- Inject job component -->
     </div>
   </div>
+
+  <!-- Create Job Modal -->
+    <Modal id="create-job-modal">
+    <template #modal-title-slot>
+      <h3>Create a Job!</h3>
+    </template>
+    <template #modal-body-slot>
+      <JobForm />
+    </template>
+  </Modal>
 </template>
 
 

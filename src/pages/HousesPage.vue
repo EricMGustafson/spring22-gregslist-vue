@@ -8,6 +8,16 @@
       <!-- Inject house component -->
     </div>
   </div>
+  
+  <!-- Create House Modal -->
+    <Modal id="create-house-modal">
+    <template #modal-title-slot>
+      <h3>Create a House!</h3>
+    </template>
+    <template #modal-body-slot>
+      <HouseForm />
+    </template>
+  </Modal>
 </template>
 
 
@@ -15,7 +25,7 @@
 import { computed, onMounted } from '@vue/runtime-core'
 import Pop from '../utils/Pop'
 import { logger } from '../utils/Logger'
-import { housesService } from '../services/housesService.js'
+import { housesService } from '../services/HousesService.js'
 import { AppState } from '../AppState'
 export default {
   setup(){
