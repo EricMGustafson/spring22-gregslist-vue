@@ -22,12 +22,14 @@
           <h4 class="selectable" @click="navigate('CarsPage')">Cars</h4>
         </li>
         <!-- TODO this is your job for the afternoon challenge -->
-        <!-- <li class="nav-link">
-          <router-link :to="{ name: 'HousesPage' }"> Houses </router-link>
+        <li class="nav-link">
+          <!-- <router-link :to="{ name: 'HousesPage' }"> Houses </router-link> -->
+          <h4 class="selectable" @click="navigate('HousesPage')">Houses</h4>
         </li>
         <li class="nav-link">
-          <router-link :to="{ name: 'JobsPage' }"> Jobs </router-link>
-        </li> -->
+          <!-- <router-link :to="{ name: 'JobsPage' }"> Jobs </router-link> -->
+          <h4 class="selectable" @click="navigate('JobsPage')">Jobs</h4>
+        </li>
       </ul>
     </div>
   </div>
